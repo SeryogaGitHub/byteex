@@ -1,0 +1,11 @@
+@import "../abstractions/global-variables";
+@import "../abstractions/mixins/index";
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $f-7;
+  text-transform: uppercase;
+}
+
+strong {
+  font-family: $f-7;
+}

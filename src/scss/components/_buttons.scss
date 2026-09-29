@@ -1,0 +1,36 @@
+@import "../abstractions/global-variables";
+
+.btn{
+  font-size: 25px;
+  text-transform: uppercase;
+  background: $orange;
+  line-height: 100%;
+  padding: 19px 60px;
+  text-align: center;
+  color: $white;
+  border-radius: 36px;
+  display: inline-block;
+  white-space: nowrap;
+  transition: .3s;
+
+  @include m(768px){
+    font-size: 16px;
+    padding: 10px 38px 10px 38px;
+  }
+
+  &:hover{
+    background: black;
+  }
+
+  &.border-gold{
+    background: transparent;
+    border: 1px solid gold;
+    color: gold;
+
+    &:hover{
+      color: $white;
+      background: brown;
+      border: 1px solid brown;
+    }
+  }
+}

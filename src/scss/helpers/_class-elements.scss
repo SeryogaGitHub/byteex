@@ -1,0 +1,104 @@
+@import "@scss/abstractions/global-variables";
+
+.section {
+  padding: 80px 0;
+
+  @include m(1240px) {
+    padding: 42px 0;
+  }
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-80 {
+  padding-bottom: 80px;
+
+  @include m(768px){
+    padding-bottom: 38px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-icon {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 17px;
+  padding-left: 37px;
+}
+
+.hide-mobile {
+  @include m(767px) {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+
+  @include m(767px) {
+    display: block;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.ul {
+  list-style: disc;
+  margin: 5px 0 42px 36px;
+
+  @include m(560px){
+    margin: 5px 0 28px 24px;
+  }
+
+  li + li {
+    margin-top: 11px;
+
+    @include m(560px){
+      margin-top: 7px;
+    }
+  }
+}
+
+.ol {
+  list-style: number;
+
+  li + li {
+    margin-top: 20px;
+  }
+}
+
+.networks {
+  display: flex;
+  margin-top: 24px;
+
+  li + li {
+    margin-left: 30px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../abstractions/mixins/index";
+
+@include font-face(
+  "GilroyBold",
+  "../fonts/GilroyBold"
+);
+@include font-face(
+  "GilroyRegular",
+  "../fonts/GilroyRegular"
+);
