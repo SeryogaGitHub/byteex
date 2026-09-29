@@ -3,7 +3,6 @@
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $f;
-  font-weight: 700;
   color: $blue;
   letter-spacing: 4%;
 }
@@ -16,5 +15,10 @@ strong {
 h1{
   line-height: 45px;
   margin-bottom: 26px;
-  font-weight: 400;
+}
+
+h3{
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 14px;
 }
