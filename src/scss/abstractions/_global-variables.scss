@@ -1,15 +1,20 @@
 @import "mixins/media-queries";
 
-$f-4: "GilroyRegular", sans-serif;
-$f-7: "GilroyBold", sans-serif;
+$f: "Sofiasans", sans-serif;
+$f-su: "SuisseIntl-Regular", sans-serif;
 
 
 $black: black;
 $dark: #1D1D1D;
 $white: white;
-$gray: gray;
+
+$gray: #565656;
+$gray3: #6C6C6C;
+
+$blue: #01005B;
 $orange: #F67F16;
 $red: red;
+$cream: #F9F0E5;
 
 //theme
 $bg: #83254B;
@@ -17,5 +22,5 @@ $bg: #83254B;
 $text-gray: $gray;
 $text-orange: $orange;
 
-$border-gray: $gray;
+$border-gray: #EDEDED;
 $border-orange: $orange;

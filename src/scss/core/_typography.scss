@@ -2,10 +2,19 @@
 @import "../abstractions/mixins/index";
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $f-7;
-  text-transform: uppercase;
+  font-family: $f;
+  font-weight: 700;
+  color: $blue;
+  letter-spacing: 4%;
 }
 
 strong {
-  font-family: $f-7;
+  font-family: $f;
+  font-weight: 700;
+}
+
+h1{
+  line-height: 45px;
+  margin-bottom: 26px;
+  font-weight: 400;
 }

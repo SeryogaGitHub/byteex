@@ -79,7 +79,7 @@
 }
 
 .ol {
-  list-style: number;
+  list-style-type: decimal;
 
   li + li {
     margin-top: 20px;
@@ -100,5 +100,39 @@
     align-items: center;
     width: 32px;
     height: 32px;
+  }
+}
+
+.icon{
+  border-radius: 50%;
+  background: $cream;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating {
+  width: 60px;
+  height: 10px;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 10px;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    background-image: url(@img/rating-empty.svg);
+    z-index: 1;
+  }
+
+  &::before {
+    width: var(--rating, 100%);
+    background-image: url(@img/rating.svg);
+    z-index: 2;
   }
 }

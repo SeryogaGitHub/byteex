@@ -34,8 +34,8 @@ html {
 }
 
 body {
-  font-family: $f-4;
-  font-size: 18px;
+  font-family: $f;
+  font-size: 15px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ body {
   text-rendering: optimizeSpeed;
 
   @include m(768px){
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -159,7 +159,7 @@ input {
   height: 64px;
   font-size: 25px;
   border-radius: 32px;
-  font-family: $f-4;
+  font-family: $f;
   padding: 0 26px;
   width: 100%;
   border: none;
