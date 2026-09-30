@@ -1,0 +1,29 @@
+.our-total{
+  color: #15005B;
+  font-size: 14px;
+
+  h3{
+    font-weight: 600;
+  }
+
+  .items{
+    display: flex;
+    justify-content: center;
+
+    .circle-icon{
+      background: #E4E4E4;
+      width: 42px;
+      height: 42px;
+      margin: 0 auto 12px;
+    }
+
+    .item{
+      padding: 0 40px;
+      border-right: 1px solid rgba(#C4C4C4, .8);
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
