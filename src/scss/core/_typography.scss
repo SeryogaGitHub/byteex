@@ -5,6 +5,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $f;
   color: $blue;
   letter-spacing: 4%;
+
+  & + .description{
+    max-width: 614px;
+    margin: auto;
+    line-height: 23px;
+    letter-spacing: 3%;
+    color: $text-gray;
+  }
 }
 
 strong {

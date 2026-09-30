@@ -17,7 +17,7 @@
     padding: 30px;
     min-height: 320px;
     text-align: center;
-    color: #676869;
+    color: $text-gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,20 +36,5 @@
       height: 100%;
       object-fit: contain;
     }
-  }
-
-  .details{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 2%;
-    color: #828282;
-    margin-top: 12px;
-  }
-
-  .rating{
-    margin-right: 10px;
   }
 }
