@@ -43,6 +43,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  color: $text-gray;
 
   @include m(768px){
     font-size: 14px;

@@ -1,0 +1,54 @@
+.faq-section{
+  .text{
+    width: 100%;
+    flex: 1;
+  }
+
+  .image{
+    position: relative;
+    padding: 130px;
+
+    .top{
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 167px;
+    }
+
+    .bottom{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 216px;
+    }
+
+    .middle{
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .wrap-middle{
+    position: relative;
+
+    &:after,
+    &:before{
+      content: "";
+      position: absolute;
+      height: 180px;
+      width: 140px;
+    }
+
+    &:after{
+      top: -20px;
+      left: -50px;
+      background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
+    }
+
+    &:before{
+      bottom: -20px;
+      right: -50px;
+      background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
+    }
+  }
+}

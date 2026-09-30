@@ -33,6 +33,26 @@
   .image{
     display: flex;
     margin-left: 60px;
+    position: relative;
+
+    &:after, &:before{
+      content: "";
+      width: 4vw;
+      height: 10vw;
+      background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &:after{
+      left: -4vw;
+    }
+
+    &:before{
+      right: -4vw;
+    }
 
     img{
       max-width: 14vw;
@@ -55,7 +75,6 @@
     background-color: $white;
     padding: 14px 20px 16px 20px;
     margin-top: 46px;
-    color: $text-gray;
     font-family: $f-su;
     margin-bottom: -160px;
     z-index: 2;
@@ -95,7 +114,6 @@
 
     .name{
       margin-right: 20px;
-      font-size: 15px;
       letter-spacing: 3% ;
     }
   }
