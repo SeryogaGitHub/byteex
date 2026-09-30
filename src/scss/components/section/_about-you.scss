@@ -1,0 +1,33 @@
+.about-you{
+  .image{
+    padding: 20px 30px;
+    position: relative;
+    margin-right: 100px;
+
+    .top, .bottom{
+      border: 4px solid $bg-gray;
+    }
+
+    .top{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 165px;
+      height: 175px;
+      object-fit: cover;
+    }
+
+    .bottom{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 130px;
+      height: 175px;
+      object-fit: cover;
+    }
+
+    .middle{
+      max-height: 570px;
+    }
+  }
+}

@@ -1,14 +1,14 @@
 .alert{
-  background-color: $cream;
   font-family: $f-su;
   font-size: 11px;
   line-height: 35px;
   letter-spacing: 8%;
   color: $gray;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 3;
 
   .item{
     position: relative;

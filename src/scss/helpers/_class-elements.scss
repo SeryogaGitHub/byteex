@@ -103,7 +103,7 @@
   }
 }
 
-.icon{
+.circle-icon{
   border-radius: 50%;
   background: $cream;
   display: flex;
@@ -135,4 +135,12 @@
     background-image: url(@img/rating.svg);
     z-index: 2;
   }
+}
+
+.bg-gray {
+  background-color: $bg-gray;
+}
+
+.bg-cream{
+  background-color: $bg-cream;
 }

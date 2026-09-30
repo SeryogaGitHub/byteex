@@ -33,4 +33,14 @@
       border: 1px solid brown;
     }
   }
+
+  svg{
+    &:last-child{
+      margin-left: 10px;
+    }
+
+    &:first-child{
+      margin-right: 10px;
+    }
+  }
 }
