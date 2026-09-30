@@ -30,6 +30,11 @@
 
 .text-center {
   text-align: center;
+
+  .btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .text-uppercase {
@@ -157,5 +162,42 @@
 
   .rating{
     margin-right: 10px;
+  }
+}
+
+.image-three{
+  display: flex;
+  position: relative;
+
+  &:after, &:before{
+    content: "";
+    width: 4vw;
+    height: 10vw;
+    background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &:after{
+    left: -4vw;
+  }
+
+  &:before{
+    right: -4vw;
+  }
+
+  img{
+    max-width: 14vw;
+    height: initial;
+    object-fit: cover;
+    position: relative;
+
+    &:nth-child(2){
+      z-index: 2;
+      transform: scale(1.2);
+      border: 3px solid $white;
+    }
   }
 }

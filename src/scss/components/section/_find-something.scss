@@ -1,0 +1,60 @@
+.find-something{
+  background: linear-gradient(0deg, $cream 0%, rgba($cream, 0.18) 43.05%, rgba($cream, 0) 100%);
+
+  .image-three{
+    margin: 120px 0;
+    display: inline-flex;
+  }
+
+  .data-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+    margin-top: 12px;
+
+    .pay{
+      max-width: 210px;
+    }
+
+    .data{
+      margin-left: 6px;
+      position: relative;
+
+      &:after{
+        content: "";
+        border-left: 1px solid #C4C4C4;
+        margin: 0 6px;
+      }
+    }
+  }
+
+  .items{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    font-size: 14px;
+
+    .item{
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      border-left: 1px solid #C4C4C4;
+
+      &:first-child{
+        border: none;
+      }
+    }
+
+    .circle-icon{
+      margin-right: 12px;
+    }
+  }
+
+  .circle-icon{
+    background: rgba(#666666, .1);
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+}
