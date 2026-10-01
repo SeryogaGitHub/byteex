@@ -22,7 +22,8 @@ strong {
 
 h1, .h1{
   line-height: 45px;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
+  font-size: 38px;
 }
 
 h2, .h2{
@@ -35,10 +36,16 @@ h2, .h2{
 h3, .h3{
   font-size: 22px;
   line-height: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 h4, .h4{
   font-size: 18px;
   line-height: 24px;
+}
+
+h6, .h6{
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 3%;
 }

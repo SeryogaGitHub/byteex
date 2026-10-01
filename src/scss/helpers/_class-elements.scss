@@ -1,13 +1,4 @@
 @import "@scss/abstractions/global-variables";
-
-.section {
-  padding: 80px 0;
-
-  @include m(1240px) {
-    padding: 42px 0;
-  }
-}
-
 .mt-0 {
   margin-top: 0;
 }
@@ -16,11 +7,11 @@
   margin-bottom: 0;
 }
 
-.mb-80 {
-  padding-bottom: 80px;
+.mb-30 {
+  margin-bottom: 30px;
 
   @include m(768px){
-    padding-bottom: 38px;
+    margin-bottom: 20px;
   }
 }
 
@@ -162,6 +153,18 @@
 
   .rating{
     margin-right: 10px;
+    width: 84px;
+    height: 14px;
+
+    &:before, &:after{
+      background-size: cover;
+      height: 14px;
+    }
+  }
+
+  .info{
+    font-family: $f-su;
+    letter-spacing: 2%;
   }
 }
 
@@ -171,33 +174,50 @@
 
   &:after, &:before{
     content: "";
-    width: 4vw;
-    height: 10vw;
+    width: 88px;
+    height: 190px;
     background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
+    z-index: 1;
+
+    @include m(1464px){
+      width: 6vw;
+      height: 13vw;
+    }
   }
 
   &:after{
-    left: -4vw;
+    left: -66px;
+
+    @include m(1464px){
+      left: -4.5vw;
+    }
   }
 
   &:before{
-    right: -4vw;
+    right: -66px;
+
+    @include m(1464px){
+      right: -4.5vw;
+    }
   }
 
   img{
-    max-width: 14vw;
-    height: initial;
+    max-width: 195px;
     object-fit: cover;
-    position: relative;
+    z-index: 2;
 
-    &:nth-child(2){
-      z-index: 2;
-      transform: scale(1.2);
+    @include m(1464px){
+      max-width: 13.34vw;
+    }
+
+    &.middle{
+      transform: scale(1.35);
       border: 3px solid $white;
+      z-index: 3;
     }
   }
 }

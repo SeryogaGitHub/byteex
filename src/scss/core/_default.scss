@@ -44,6 +44,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   color: $text-gray;
+  letter-spacing: 3%;
 
   @include m(768px){
     font-size: 14px;
@@ -234,11 +235,7 @@ img {
 }
 
 p{
-  line-height: 1.4;
-
-  @include m(768px){
-    line-height: 1.5;
-  }
+  line-height: 23px;
 
   & + p,
   & + h4{

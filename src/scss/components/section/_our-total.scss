@@ -4,6 +4,7 @@
 
   h3{
     font-weight: 600;
+    margin-bottom: 0;
   }
 
   .items{
@@ -18,7 +19,7 @@
     }
 
     .item{
-      padding: 0 40px;
+      padding: 0 50px;
       border-right: 1px solid rgba(#C4C4C4, .8);
 
       &:last-child {

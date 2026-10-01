@@ -1,15 +1,15 @@
 .top-section{
   .logo{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .list{
     li{
       display: flex;
-      align-items: center;
+      align-items: flex-start;
 
       & + li{
-        margin-top: 23px;
+        margin-top: 24px;
       }
     }
   }
@@ -18,20 +18,26 @@
     width: 30px;
     height: 30px;
     min-width: 30px;
-    margin-right: 20px;
+    margin-right: 14px;
+    margin-top: -2px;
   }
 
   .text-image{
     display: flex;
     align-items: center;
+  }
 
-    & > *{
-      flex: 1;
-    }
+  .text{
+    flex: 1;
   }
 
   .image-three{
-    margin-left: 60px;
+    margin-left: 164px;
+    margin-top: 10%;
+
+    @include m(1920px){
+      margin-left: 11.2vw;
+    }
   }
 
   .top-reviews{
@@ -39,9 +45,11 @@
     border: 1px solid $border-gray;
     border-radius: 8px;
     background-color: $white;
-    padding: 14px 20px 16px 20px;
+    padding: 14px 20px 12px 20px;
     margin-top: 46px;
+    font-size: 12px;
     font-family: $f-su;
+    line-height: 23px;
     margin-bottom: -160px;
     z-index: 2;
     position: relative;
@@ -80,7 +88,8 @@
 
     .name{
       margin-right: 20px;
-      letter-spacing: 3% ;
+      letter-spacing: 3%;
+      font-size: 15px;
     }
   }
 

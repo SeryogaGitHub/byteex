@@ -2,15 +2,23 @@
   background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
 
   h2{
-    margin-bottom: 74px;
+    margin-bottom: 88px;
   }
 
-  h6{
+  h4{
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 3%;
-    color: #868787;
     font-family: $f;
+  }
+
+  h4, h6{
+    color: #868787;
+  }
+
+  .slick-track{
+    display: flex;
+    align-items: center;
   }
 
   .list{
@@ -29,13 +37,13 @@
     width: 42px;
     height: 42px;
     min-width: 42px;
-    margin-top: -16px;
+    margin-top: -10px;
     margin-right: 32px;
   }
 
   .text-slider{
     display: flex;
-    margin-top: 110px;
+    margin-top: 95px;
   }
 
   .text{
@@ -43,7 +51,7 @@
   }
 
   .as-seen-slider{
-    margin: 0 -10px;
+    margin: 10px -20px 0 -20px;
 
     img{
       max-height: 54px;
@@ -69,7 +77,6 @@
   .wrap-loungewear-you{
     text-align: center;
     position: relative;
-    padding: 0 30px;
 
     h6{
       font-family: $f-su;
@@ -80,7 +87,7 @@
     }
   }
 
-  .slick-next, .slick-prev{
+  .slick-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -97,11 +104,11 @@
   }
 
   .slick-next{
-    right: 0;
+    right: -42px;
   }
 
   .slick-prev{
-    left: 0;
+    left: -42px;
   }
 
   .loungewear-you-slider{
@@ -118,7 +125,7 @@
     bottom: 10px;
 
     .slick-slide{
-      margin: 0 3.5px;
+      margin: 0 1.5px;
     }
 
     .slick-current{

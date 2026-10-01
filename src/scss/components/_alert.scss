@@ -8,11 +8,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
+
+  .center{
+    max-width: 1316px;
+  }
+
+  .flex{
+    & > *{
+      margin: 0 5px;
+    }
+  }
 
   .item{
     position: relative;
-    padding-left: 20px;
+    padding-left: 14px;
 
     &:after{
       content: "";

@@ -4,14 +4,18 @@
   font-size: 18px;
   background: $blue;
   line-height: 100%;
-  padding: 19px 60px;
+  padding: 19px 54px;
   text-align: center;
   color: $white;
-  border-radius: 6px;
+  border-radius: 5px;
   display: inline-block;
   white-space: nowrap;
   transition: .3s;
-  margin-top: 46px;
+  margin-top: 30px;
+  font-family: $f-su;
+  letter-spacing: 3%;
+  width: 100%;
+  max-width: 362px;
 
   @include m(768px){
     font-size: 16px;
@@ -34,13 +38,17 @@
     }
   }
 
+  &.mt-0 {
+    margin-top: 0;
+  }
+
   svg{
     &:last-child{
-      margin-left: 10px;
+      margin-left: 28px;
     }
 
     &:first-child{
-      margin-right: 10px;
+      margin-right: 28px;
     }
   }
 }

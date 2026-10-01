@@ -1,8 +1,8 @@
 .about-you{
   .image{
-    padding: 20px 30px;
+    padding: 46px 66px 48px 76px;
     position: relative;
-    margin-right: 100px;
+    margin-right: 86px;
 
     .top, .bottom{
       border: 4px solid $bg-gray;
@@ -29,5 +29,9 @@
     .middle{
       max-height: 570px;
     }
+  }
+
+  .text{
+    flex: 1;
   }
 }

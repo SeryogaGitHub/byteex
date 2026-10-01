@@ -6,7 +6,8 @@
 
   .image{
     position: relative;
-    padding: 130px;
+    padding: 130px 80px 116px 80px;
+    margin-left: 74px;
 
     .top{
       position: absolute;
@@ -25,6 +26,7 @@
     .middle{
       position: relative;
       z-index: 2;
+      max-height: 354px;
     }
   }
 
@@ -35,19 +37,19 @@
     &:before{
       content: "";
       position: absolute;
-      height: 180px;
-      width: 140px;
+      height: 196px;
+      width: 138px;
     }
 
     &:after{
-      top: -20px;
+      top: -66px;
       left: -50px;
       background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
     }
 
     &:before{
-      bottom: -20px;
-      right: -50px;
+      bottom: -40px;
+      right: -66px;
       background: linear-gradient(180deg, rgba($cream, 0.7) 0%, rgba($cream, 0.217) 100%);
     }
   }

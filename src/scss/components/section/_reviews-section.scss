@@ -1,8 +1,4 @@
 .reviews-section{
-  h2{
-    margin-bottom: 30px;
-  }
-
   .grid-image{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
@@ -11,7 +7,8 @@
 
     img{
       width: 10vw;
-      height: 8.4vw;
+      height: 8.8vw;
+      object-fit: cover;
     }
   }
 
@@ -24,11 +21,11 @@
     }
 
     .slick-prev{
-      left: -60px;
+      left: -42px;
     }
 
     .slick-next{
-      right: -60px;
+      right: -42px;
     }
 
     .person{
@@ -52,8 +49,13 @@
     }
   }
 
+  .reviews-slider{
+    margin: 0 -21px;
+  }
+
   .slick-slide{
     padding: 10px;
+    margin: 0 11px;
   }
 
   .slide{
