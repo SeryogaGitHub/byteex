@@ -1,8 +1,30 @@
 .describe-benefits{
-  background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, $cream 0%, rgba($cream, 0.18) 43.05%, rgba($cream, 0) 100%);
+
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: -10vw;
+    height: 60vw;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+    z-index: 1;
+  }
+
+  & > *{
+    position: relative;
+    z-index: 2;
+  }
 
   h2{
     margin-bottom: 88px;
+
+    @include m(1024px){
+      margin-bottom: 26px;
+    }
   }
 
   h4{
@@ -24,8 +46,22 @@
   .list{
     max-width: 600px;
 
+    @include m(1024px){
+      margin: 60px auto 0;
+    }
+
+    @include m(420px){
+      padding: 0;
+    }
+
     li{
       display: flex;
+
+      @include m(1024px){
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+      }
 
       & + li{
         margin-top: 20px;
@@ -37,34 +73,92 @@
     width: 42px;
     height: 42px;
     min-width: 42px;
-    margin-top: -10px;
-    margin-right: 32px;
+
+    @include mmin(1025px){
+      margin-top: -10px;
+      margin-right: 32px;
+    }
+
+    @include m(1024px){
+      margin-bottom: 20px;
+    }
   }
 
   .text-slider{
     display: flex;
     margin-top: 95px;
+
+    @include m(1024px){
+      flex-direction: column-reverse;
+      margin-top: 42px;
+    }
+
+    .item{
+      @include m(1024px){
+        border-bottom: 1px solid rgba(#C4C4C4, .5);
+        padding: 0 46px 30px;
+        margin-bottom: 30px;
+      }
+
+      @include m(420px){
+        padding: 0 20px 30px;
+      }
+    }
   }
 
   .text{
     flex: 1;
+    padding-right: 80px;
+
+    @include m(1024px){
+      padding-right: initial;
+      text-align: center;
+    }
   }
 
   .as-seen-slider{
-    margin: 10px -20px 0 -20px;
+    margin: 10px -40px 0;
+
+    @include m(1024px){
+      margin: 10px -14px 0;
+    }
 
     img{
       max-height: 54px;
-      max-width: 200px;
       margin: auto;
     }
 
     .slide{
       transition: .3s;
-      padding: 10px;
+      padding: 10px 40px;
+
+      @include m(1024px){
+        padding: 10px 14px;
+      }
 
       &:hover{
         transform: scale(1.1);
+      }
+    }
+
+    .slick-dots{
+      display: flex;
+      justify-content: center;
+
+      button{
+        width: 8px;
+        height: 8px;
+        background: #C4C4C4;
+        font-size: 0;
+        border-radius: 50%;
+        margin: 0 3.5px;
+        display: block;
+      }
+
+      .slick-active{
+        button{
+          background: $black;
+        }
       }
     }
   }
@@ -72,11 +166,28 @@
   .inner{
     margin-right: auto;
     min-width: 1px;
+
+    @include m(1024px){
+      text-align: center;
+      margin: initial;
+    }
+
+    @include m(420px){
+      padding: 0 20px;
+    }
   }
 
   .wrap-loungewear-you{
     text-align: center;
     position: relative;
+
+    @include m(1024px){
+      display: inline-flex;
+    }
+
+    @include m(560px){
+      width: 100%;
+    }
 
     h6{
       font-family: $f-su;
@@ -105,15 +216,27 @@
 
   .slick-next{
     right: -42px;
+
+    @include m(420px){
+      right: -28px;
+    }
   }
 
   .slick-prev{
     left: -42px;
+
+    @include m(420px){
+      left: -28px;
+    }
   }
 
   .loungewear-you-slider{
     min-width: 1px;
     max-width: 434px;
+
+    @include m(560px){
+      max-width: 100%;
+    }
   }
 
   .loungewear-you-preview{
@@ -132,6 +255,11 @@
       img{
         outline: 3px solid white;
         outline-offset: -3px;
+
+        @include m(560px){
+          outline: 2px solid white;
+          outline-offset: -2px;
+        }
       }
     }
 
@@ -142,6 +270,11 @@
         object-fit: cover;
         width: 32px;
         height: 32px;
+
+        @include m(560px){
+          width: 22px;
+          height: 22px;
+        }
       }
     }
   }

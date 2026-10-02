@@ -2,13 +2,25 @@
 
 .section{
   padding: 68px 0;
+
+  @include m(1024px){
+    padding: 52px 0;
+  }
 }
 
 .center{
   margin: 0 auto;
-  max-width: 1264px;
-  padding: 0 16px;
+  max-width: 1336px;
+  padding: 0 52px;
   width: 100%;
+
+  @include m(1024px){
+    padding: 0 46px;
+  }
+
+  @include m(420px){
+    padding: 0 20px;
+  }
 }
 
 .flex {

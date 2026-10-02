@@ -1,4 +1,8 @@
 .faq-section{
+  h2{
+    text-align: center;
+  }
+
   .text{
     width: 100%;
     flex: 1;
@@ -8,6 +12,10 @@
     position: relative;
     padding: 130px 80px 116px 80px;
     margin-left: 74px;
+
+    @include m(1024px){
+      display: none;
+    }
 
     .top{
       position: absolute;

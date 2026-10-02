@@ -46,8 +46,12 @@ body {
   color: $text-gray;
   letter-spacing: 3%;
 
-  @include m(768px){
+  @include m(1024px){
     font-size: 14px;
+  }
+
+  @include m(768px){
+    font-size: 13px;
   }
 }
 

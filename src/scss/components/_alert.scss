@@ -24,6 +24,10 @@
     position: relative;
     padding-left: 14px;
 
+    @include m(1024px){
+      padding: 0;
+    }
+
     &:after{
       content: "";
       border-left: 1px solid #A8A39E;
@@ -34,6 +38,10 @@
       left: 0;
       bottom: 0;
       margin: auto;
+
+      @include m(1024px){
+        border: none;
+      }
     }
 
     &:first-child{

@@ -24,6 +24,15 @@ h1, .h1{
   line-height: 45px;
   margin-bottom: 32px;
   font-size: 38px;
+
+  @include m(1024px){
+    margin-bottom: 16px;
+  }
+
+  @include m(768px){
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
 
 h2, .h2{

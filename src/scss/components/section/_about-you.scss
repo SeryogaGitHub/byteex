@@ -4,6 +4,11 @@
     position: relative;
     margin-right: 86px;
 
+    @include m(1024px){
+      margin-right: 0;
+      margin-bottom: 46px;
+    }
+
     .top, .bottom{
       border: 4px solid $bg-gray;
     }
@@ -15,6 +20,11 @@
       width: 165px;
       height: 175px;
       object-fit: cover;
+
+      @include m(1024px){
+        width: 100px;
+        height: 107px;
+      }
     }
 
     .bottom{
@@ -24,6 +34,11 @@
       width: 130px;
       height: 175px;
       object-fit: cover;
+
+      @include m(1024px){
+        width: 110px;
+        height: 112px;
+      }
     }
 
     .middle{
@@ -33,5 +48,12 @@
 
   .text{
     flex: 1;
+  }
+
+  .flex{
+    @include m(1024px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

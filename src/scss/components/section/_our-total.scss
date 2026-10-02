@@ -11,6 +11,13 @@
     display: flex;
     justify-content: center;
 
+    @include m(768px){
+      flex-direction: column;
+      align-items: center;
+      max-width: 282px;
+      margin: auto;
+    }
+
     .circle-icon{
       background: #E4E4E4;
       width: 42px;
@@ -22,8 +29,16 @@
       padding: 0 50px;
       border-right: 1px solid rgba(#C4C4C4, .8);
 
+      @include m(768px){
+        border-right: none;
+        border-bottom: 1px solid rgba(#C4C4C4, .8);
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+      }
+
       &:last-child {
         border: none;
+        margin-bottom: 0;
       }
     }
   }

@@ -40,7 +40,7 @@
 }
 
 .hide-mobile {
-  @include m(767px) {
+  @include m(1024px) {
     display: none;
   }
 }
@@ -48,7 +48,7 @@
 .show-mobile {
   display: none;
 
-  @include m(767px) {
+  @include m(1024px) {
     display: block;
   }
 }

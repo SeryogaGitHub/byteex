@@ -1,9 +1,23 @@
 .top-section{
+  h1{
+    @include m(1024px){
+      text-align: center;
+    }
+  }
+
   .logo{
     margin-bottom: 50px;
+
+    @include m(1024px){
+      text-align: center;
+      margin-bottom: 14px;
+    }
   }
 
   .list{
+    max-width: 400px;
+    margin: auto;
+
     li{
       display: flex;
       align-items: flex-start;
@@ -25,6 +39,10 @@
   .text-image{
     display: flex;
     align-items: center;
+
+    @include m(1024px){
+      display: block;
+    }
   }
 
   .text{
@@ -35,8 +53,28 @@
     margin-left: 164px;
     margin-top: 10%;
 
+    &.mobile{
+      display: none;
+
+      @include m(1024px){
+        display: inline-flex;
+      }
+    }
+
+    &.desktop{
+      @include m(1024px){
+        display: none;
+      }
+    }
+
     @include m(1920px){
       margin-left: 11.2vw;
+    }
+
+    @include m(1024px){
+      margin: 60px auto;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -55,6 +93,13 @@
     position: relative;
     box-shadow: 0 3px 10px 0 rgba($black, 0.08);
 
+
+    @include m(1024px){
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -120px;
+    }
+
     .header{
       display: flex;
       align-items: center;
@@ -72,6 +117,17 @@
 
     .text{
       margin-top: 12px;
+      line-clamp: 4;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+
+      @include m(1024px){
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+      }
     }
 
     .details{
@@ -99,5 +155,13 @@
 
   .rating{
     margin-right: 7px;
+  }
+
+  .btn{
+    @include m(1024px){
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
