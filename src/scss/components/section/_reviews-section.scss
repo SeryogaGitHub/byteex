@@ -7,6 +7,7 @@
 
     @include m(1024px){
       grid-template-columns: repeat(auto-fit, minmax(14vw, 1fr));
+      margin: 44px 0 30px;
     }
 
     @include m(560px){
@@ -29,7 +30,7 @@
 
       @include m(560px){
         width: 24vw;
-        height: 22vw;
+        height: 24vw;
 
         &:nth-child(n + 9) {
           display: none!important;
@@ -46,41 +47,49 @@
       top: 85px;
     }
 
-    .slick-prev{
-      left: -42px;
-    }
-
-    .slick-next{
-      right: -42px;
-    }
-
     .person{
       width: 40px;
       height: 40px;
       border-radius: 50%;
       object-fit: cover;
       margin-right: 14px;
+
+      @include m(1024px){
+        width: 34px;
+        height: 34px;
+      }
     }
 
     .header{
       display: flex;
       align-items: center;
       margin-bottom: 12px;
+
+      @include m(1024px){
+        margin-bottom: 16px;
+      }
+    }
+
+    .rating{
+      transform: scale(0.88);
+      margin-left: -6px;
     }
 
     .text{
-      font-size: 12px;
-      line-height: 23px;
-      letter-spacing: 4%;
+      p{
+        font-size: 12px;
+        letter-spacing: 4%;
+        line-height: 23px;
+
+        @include m(1024px){
+          line-height: 20px;
+        }
+      }
     }
   }
 
   .reviews-slider{
-    margin: 0 -10px;
-
-    @include m(1024px){
-      margin: initial;
-    }
+    margin: 0 -20px;
   }
 
   .slick-slide{
@@ -97,5 +106,9 @@
     padding: 30px 40px;
     box-shadow: 0px 3px 10px 1px rgba($black, 0.08);
     border-radius: 8px;
+
+    @include m(1024px){
+      padding: 26px 32px;
+    }
   }
 }

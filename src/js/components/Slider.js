@@ -80,7 +80,9 @@ export const Slider = () => {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            dots: true,
             infinite: true,
+            adaptiveHeight: true
           }
         },
         {
@@ -88,7 +90,9 @@ export const Slider = () => {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            dots: true,
             infinite: true,
+            adaptiveHeight: true
           }
         }
       ]

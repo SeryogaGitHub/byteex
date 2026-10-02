@@ -32,6 +32,11 @@
     line-height: 36px;
     letter-spacing: 3%;
     font-family: $f;
+
+    @include m(1024px){
+      font-size: 15px;
+      line-height: 18px;
+    }
   }
 
   h4, h6{
@@ -67,6 +72,17 @@
         margin-top: 20px;
       }
     }
+
+    h3{
+      margin-bottom: 18px;
+    }
+
+    p{
+      @include m(1024px){
+        line-height: 18px;
+        letter-spacing: 3%;
+      }
+    }
   }
 
   .circle-icon{
@@ -80,7 +96,7 @@
     }
 
     @include m(1024px){
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
   }
 
@@ -96,7 +112,7 @@
     .item{
       @include m(1024px){
         border-bottom: 1px solid rgba(#C4C4C4, .5);
-        padding: 0 46px 30px;
+        padding: 0 46px 42px;
         margin-bottom: 30px;
       }
 
@@ -120,12 +136,16 @@
     margin: 10px -40px 0;
 
     @include m(1024px){
-      margin: 10px -14px 0;
+      margin: 5px -14px 0;
     }
 
     img{
       max-height: 54px;
       margin: auto;
+
+      @include m(1024px){
+        max-height: 32px;
+      }
     }
 
     .slide{
@@ -138,27 +158,6 @@
 
       &:hover{
         transform: scale(1.1);
-      }
-    }
-
-    .slick-dots{
-      display: flex;
-      justify-content: center;
-
-      button{
-        width: 8px;
-        height: 8px;
-        background: #C4C4C4;
-        font-size: 0;
-        border-radius: 50%;
-        margin: 0 3.5px;
-        display: block;
-      }
-
-      .slick-active{
-        button{
-          background: $black;
-        }
       }
     }
   }
@@ -214,22 +213,6 @@
     }
   }
 
-  .slick-next{
-    right: -42px;
-
-    @include m(420px){
-      right: -28px;
-    }
-  }
-
-  .slick-prev{
-    left: -42px;
-
-    @include m(420px){
-      left: -28px;
-    }
-  }
-
   .loungewear-you-slider{
     min-width: 1px;
     max-width: 434px;
@@ -246,6 +229,10 @@
     right: 0;
     margin: auto;
     bottom: 10px;
+
+    @include m(1024px){
+      width: 64%;
+    }
 
     .slick-slide{
       margin: 0 1.5px;

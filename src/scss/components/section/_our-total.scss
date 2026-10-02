@@ -14,7 +14,7 @@
     @include m(768px){
       flex-direction: column;
       align-items: center;
-      max-width: 282px;
+      max-width: 290px;
       margin: auto;
     }
 
@@ -32,8 +32,10 @@
       @include m(768px){
         border-right: none;
         border-bottom: 1px solid rgba(#C4C4C4, .8);
-        padding-bottom: 16px;
-        margin-bottom: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
       }
 
       &:last-child {

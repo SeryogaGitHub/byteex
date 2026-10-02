@@ -4,6 +4,10 @@
   .image-three{
     margin: 96px 0;
     display: inline-flex;
+
+    @include m(1024px){
+      margin: 12vw 0 18vw 0;
+    }
   }
 
   .data-pay{
@@ -15,6 +19,10 @@
 
     .pay{
       max-width: 230px;
+
+      @include m(1024px){
+        max-width: 168px;
+      }
     }
 
     .data{

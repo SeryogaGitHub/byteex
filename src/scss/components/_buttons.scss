@@ -4,7 +4,7 @@
   font-size: 18px;
   background: $blue;
   line-height: 100%;
-  padding: 19px 54px;
+  padding: 19px;
   text-align: center;
   color: $white;
   border-radius: 5px;
@@ -40,10 +40,18 @@
   svg{
     &:last-child{
       margin-left: 28px;
+
+      @include m(420px){
+        margin-left: 12px;
+      }
     }
 
     &:first-child{
       margin-right: 28px;
+
+      @include m(420px){
+        margin-right: 12px;
+      }
     }
   }
 }

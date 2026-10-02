@@ -1,6 +1,12 @@
 .accordion-container{
   border-top: 1px solid $border-gray;
 
+  &, p{
+    @include m(1024px){
+      line-height: 20px;
+    }
+  }
+
   &:last-child{
     border-bottom: 1px solid $border-gray;
   }
@@ -11,6 +17,10 @@
     text-align: left;
     padding: 24px 66px 24px 0;
     transition: .3s;
+
+    @include m(1024px){
+      padding: 18px 30px 18px 0;
+    }
 
     &.open{
       padding-bottom: 6px;
@@ -31,6 +41,10 @@
       margin: auto;
       right: 40px;
       transition: .3s;
+
+      @include m(1024px){
+        right: 8px;
+      }
     }
 
     &:before{
@@ -44,12 +58,21 @@
       margin: auto;
       right: 46px;
       transition: .3s;
+
+      @include m(1024px){
+        right: 14px;
+      }
     }
   }
   .accordion-content{
     display: none;
     padding-bottom: 24px;
     padding-right: 66px;
+
+    @include m(1024px){
+      padding-right: 0;
+      padding-bottom: 16px;
+    }
 
     &.open{
       display: block;
